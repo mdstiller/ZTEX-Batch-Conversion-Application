@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ztexBatchConversion.exe" version="1.0.0.6" publicKeyToken="816099cd4f333394" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ztexBatchConversion" version="1.0.5.8" language="neutral" processorArchitecture="x86" />
+    <commandLine file="ztexBatchConversion.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3DS.dll" size="318976">
+      <assemblyIdentity name="3DS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jblrDxG/OEO1+oT2V7mEa6YE2khklcIl+soZWr6uLJE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LibEveryFileExplorer.dll" size="123904">
+      <assemblyIdentity name="LibEveryFileExplorer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>A/NRZJ/ijHxNag8gfguf7JKFXefu290ur/NqHyfAdk0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ztexBatchConversion.exe" size="40448">
+      <assemblyIdentity name="ztexBatchConversion" version="1.0.5.8" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UgjQlatGPlnsInoqqLtXnq9aYeBZVI6fMy6Z4QB+Akc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ztexBatchConversion.exe.config" size="1065">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WZe5cYheqU9gdWvsY6jNFZLZbWbJABnNjMJ5Alz+ob0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=glx-mike-PC\glx-mike" issuerKeyHash="1be1ddffa17949e13bd5d56875cb6cace358c425" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zf16iHDbZHySN1V6lLRrPnXt/47p1ec1uY01Vy3En8U=</DigestValue></Reference></SignedInfo><SignatureValue>Hcsi/OYwBUyVjWiF+wEKWlIqzNHbNDS6KWuaYI/uMyu9QnhPXQ6pbSRLfxpkR+tVgB3KGTa2kT7dDYrz+cucNW/baBUsSaDDPDrfhmobyF0Edl8Fqt7/H73unTBh3KywjF4moHJR3W/DrHKCqBLJqQr+0IyuLvAU16tlBLO7FKI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sJcwfYBmz0Lc5TsA9va3pvBjsfMdXw53oLUqLkysTUxjAgmz0NfSVpfAkQnE/MXZN3UcG2iaoNLdPKeD+qt4QKeOR5zPHRXXuNzmbPv9WC9V3QBlGiSmTvszQmkpx8EyxdgZfzyM/4SbnmjyJN5VFAQ3lzUcu53NJEXFac+m4X8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c59fc42d57358db935e7d5e98effed753e6bb4947a5537927c64db70887afdcd" Description="" Url=""><as:assemblyIdentity name="ztexBatchConversion.exe" version="1.0.0.6" publicKeyToken="816099cd4f333394" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=glx-mike-PC\glx-mike</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kAEG23vhciTX9szVFj5NcPv/xQic0oW7UaBwxCQuSSw=</DigestValue></Reference></SignedInfo><SignatureValue>pI7KSAXFBTe3UgEbCCk43Z+DLHzj/swBVcGVkkKoab56Mc9b8oI3UHJ01AgKcMPYIkadbSfkov1FOgkHHuDnBsxQ/3EQfvh7cY/AtILvm30OVZGiscU7ae8CzL9f/wep60UmEFE07jCKK1gDb/naYhQlkimPQ0XBpDi6jzLoI7g=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sJcwfYBmz0Lc5TsA9va3pvBjsfMdXw53oLUqLkysTUxjAgmz0NfSVpfAkQnE/MXZN3UcG2iaoNLdPKeD+qt4QKeOR5zPHRXXuNzmbPv9WC9V3QBlGiSmTvszQmkpx8EyxdgZfzyM/4SbnmjyJN5VFAQ3lzUcu53NJEXFac+m4X8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQF2SASV8oYYRBsgT4J0T7LTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAZwBsAHgALQBtAGkAawBlAC0AUABDAFwAZwBsAHgALQBtAGkAawBlMB4XDTE2MDIwODIxNTk0MVoXDTE3MDIwODAzNTk0MVowMzExMC8GA1UEAx4oAGcAbAB4AC0AbQBpAGsAZQAtAFAAQwBcAGcAbAB4AC0AbQBpAGsAZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsJcwfYBmz0Lc5TsA9va3pvBjsfMdXw53oLUqLkysTUxjAgmz0NfSVpfAkQnE/MXZN3UcG2iaoNLdPKeD+qt4QKeOR5zPHRXXuNzmbPv9WC9V3QBlGiSmTvszQmkpx8EyxdgZfzyM/4SbnmjyJN5VFAQ3lzUcu53NJEXFac+m4X8CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBO5ErD/exsRpI2yTJtlISigGW6mWjAjzxz6vP8cgL4fUiBgbhNA/nInh2lF9D/0HG3IVfwy81Hcg47Tm4azkMw+u3KpeJcgZBUBKvpolG+3SE3PCBLs8Rkp5qa8fDecIobDwSIMoqVrRCW7Bj1w0djyKd9clTkZIn3W/qFJHk8KQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
